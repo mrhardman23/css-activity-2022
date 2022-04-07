@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internal CSS</title>
+  <title>Classes and IDs</title>
   <!-- Internal CSS starts here -->
   <style>
     body {
@@ -17,6 +17,41 @@
     }
     p {
       font-size: 24px;
+    }
+    #styled-by-id {
+      font-family: Georgia, Cambria, serif;
+      font-weight: bold;
+    }
+    ul {
+      /* This gets rid of the bullet points beside each list item. */
+      list-style: none;
+    }
+    li {
+      
+      /* Adds spacing around the outside of an element. */
+      margin: 4px;
+
+      /* Adds spacing on the inside of an element. */
+      padding: 5px;
+
+      font-size: 20px;
+    }
+
+    .nav-link {
+      margin: 4px;
+
+      /* Adds styling to the border of the element */
+      border: 2px solid black;
+
+      padding: 5px;
+
+      background-color: #003100;
+      color: #eeffee;
+    }
+
+    /* Uses descendant selectors to style all list items that are in the nav-link class elements */
+    .nav-link li {
+      display: inline-block;
     }
   </style>
   <!-- Internal CSS ends here -->
@@ -33,10 +68,11 @@
         <a href="div-and-span.html" class="nav-link"><li>Div and Span Page</li></a>
       </ul>
     </nav>
-    <h1>Internal CSS</h1>
+    <h1>Classes and IDs</h1>
   </header>
   <main>
-    <p>This page shows the effects of adding internal CSS to a web page.</p>
+    <p>This page shows the use of classes and IDs on a web page.</p>
+    <p id="styled-by-id">This paragraph will show the effect of giving an element an ID and styling that ID.</p>
   </main>
 </body>
 </html>
