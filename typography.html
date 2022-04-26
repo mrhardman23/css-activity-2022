@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Div and Span</title>
+  <!-- Internal CSS starts here -->
+  <style>
+
+    /*
+      All elements will now have a line height of 140% of their
+      font size applied to all text, as well as all text will use
+      the Arial font family first, then Helvetica if Arial does not
+      work, then Verdana if Arial and Helvetica do not work, and finally
+      use the default sans-serif font as a last resort.
+     */
+    * {
+      font-family: Arial, Helvetica, Verdana, sans-serif;
+
+      line-height: 140%;
+    }
+
+    /*
+      This styles the entire website to have a background color
+      of #fbfbfe and styles all the text on the website to have
+      a color of #17230b.
+     */
+    body {
+      background-color: #fbfbfe;
+      color: #17230b;
+    }
+
+    /*
+      This styles all main headings to be center aligned,
+      only use uppercase letters, have text underlined,
+      and use a font size of 64 pixels. 
+     */
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 64px;
+    }
+
+    p {
+      font-size: 24px;
+      letter-spacing: 10px;
+    }
+    #styled-by-id {
+      font-family: Geneva, Tahoma, 'Gill Sans', sans-serif;
+      font-weight: bold;
+    }
+    ul {
+      /* This gets rid of the bullet points beside each list item. */
+      list-style: none;
+    }
+    li {
+      
+      /* Adds spacing around the outside of an element. */
+      margin: 4px;
+
+      /* Adds spacing on the inside of an element. */
+      padding: 5px;
+
+      font-size: 20px;
+    }
+
+    .nav-link {
+      margin: 4px;
+
+      /* Adds styling to the border of the element */
+      border: 2px solid black;
+
+      padding: 5px;
+
+      background-color: #003100;
+      color: #eeffee;
+    }
+
+    /* Uses descendant selectors to style all list items that are in the nav-link class elements */
+    .nav-link li {
+      display: inline-block;
+    }
+
+    div {
+      background-color: ghostwhite;
+      width: auto;
+      height: 140px;
+    }
+
+    span {
+      background-color: lightgreen;
+      font-style: italic;
+    }
+  </style>
+  <!-- Internal CSS ends here -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html" class="nav-link"><li>Inline CSS Page</li></a>
+        <a href="internal-css.html" class="nav-link"><li>Internal CSS Page</li></a>
+        <a href="external-css.html" class="nav-link"><li>External CSS Page</li></a>
+        <a href="testing-cascading.html" class="nav-link"><li>Testing Cascading Page</li></a>
+        <a href="classes-and-ids.html" class="nav-link"><li>Classes and IDs Page</li></a>
+        <a href="div-and-span.html" class="nav-link"><li>Div and Span Page</li></a>
+      </ul>
+    </nav>
+    <h1>Typographic Principles</h1>
+  </header>
+  <main>
+    <div>
+      <p>
+        This page shows application of Typographic Principles, such as the
+        choice between serif vs. sans-serif fonts, contrast, font size, hierarchy,
+        and space.
+      </p>
+      <p id="styled-by-id">This paragraph will show the effect of giving an element an ID and <span>styling</span> that ID.</p>
+    </div>
+  </main>
+</body>
+</html>
