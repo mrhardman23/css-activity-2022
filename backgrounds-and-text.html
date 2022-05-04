@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backgrounds and Text</title>
+  <style>
+    /* Styles all elements to have a font size of 20 pixels by default. */
+    * {
+      font-size: 20px;
+    }
+
+    /*
+      Styles all elements in the body to have a font color of #291541. It also 
+      sets the background colour of the entire webpage to ghostwhite. 
+    */
+    body {
+      color: #291541;
+      background-color: ghostwhite;
+    }
+
+    ul {
+      /* This gets rid of the bullet points beside each list item. */
+      list-style: none;
+    }
+
+    nav a {
+      /* Adds 4 pixels of space around the outside of each anchor in the nav */
+      margin: 4px;
+
+      /* Adds styling to the border of the element */
+      border: 2px solid black;
+
+      /* Adds 5 pixels of space around the inside of each anchor in the nav */
+      padding: 5px;
+
+      /* 
+        Sets the background colour of the nav to b1 #121212 and the font color 
+        to be #eeffee.
+      */
+      background-color: #003100;
+      color: #eeffee;
+
+      /* Sets the text to have a bolder font weight. */
+      font-weight: bolder;
+    }
+
+    /* 
+      Swaps out the colour scheme of anchors in the nav when they are hovered over 
+      or focused on.
+    */
+    nav a:hover, nav a:focus {
+      background-color: #eeffee;
+      color: #003100;
+    }
+
+    /* Changes the colour of the links that have been visited already. */
+    nav a:visited {
+      color: #9938f2;
+    }
+
+    /* Uses descendant selectors to style all list items that are in the nav-link class elements */
+    nav a li {
+      /* 
+        Changes all list items in the nav so that they will display beside one another,
+        but still be affected by Box model properties.
+      */
+      display: inline-block;
+
+      /* Adds spacing around the outside of an element. */
+      margin: 4px;
+
+      /* Adds spacing on the inside of an element. */
+      padding: 5px;
+
+      font-size: 20px;
+    }
+
+    /* Styles all main headings to use font size of 48 pixels and center aligns the text. */
+    h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    /* Changes the background color of the section to be #5ac88b. */
+    section {
+      background-color: #5ac88b;
+    }
+
+    /* Changes the paragraphs in the section to have a bold font weight. */
+    section p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <a href="index.html" class="nav-link"><li>Inline CSS Page</li></a>
+      <a href="internal-css.html" class="nav-link"><li>Internal CSS Page</li></a>
+      <a href="external-css.html" class="nav-link"><li>External CSS Page</li></a>
+      <a href="testing-cascading.html" class="nav-link"><li>Testing Cascading Page</li></a>
+      <a href="classes-and-ids.html" class="nav-link"><li>Classes and IDs Page</li></a>
+      <a href="div-and-span.html" class="nav-link"><li>Div and Span Page</li></a>
+      <a href="typography.html" class="nav-link"><li>Typography Page</li></a>
+      <a href="backgrounds-and-text.html" class="nav-link"><li>Backgrounds and Text Page</li></a>
+    </ul>
+  </nav>
+  <main>
+    <h1>Backgrounds and Text</h1>
+    <section>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+      <p>School-appropriate filler</p>
+    </section>
+  </main>
+</body>
+</html>
