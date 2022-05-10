@@ -12,12 +12,12 @@
     }
 
     /*
-      Styles all elements in the body to have a font color of #291541. It also 
-      sets the background colour of the entire webpage to ghostwhite. 
+      Styles all elements in the body to have a font color of whitesmoke. It also 
+      sets the background to use an image of circles overlapping each other.
     */
     body {
-      color: #291541;
-      background-color: ghostwhite;
+      color: whitesmoke;
+      background-image: url(https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661);
 
       margin: 5% 10%;
     }
@@ -38,11 +38,11 @@
       padding: 5px;
 
       /* 
-        Sets the background colour of the nav to b1 #121212 and the font color 
-        to be #eeffee.
+        Sets the background colour of the nav to #00549E and the font color 
+        to be aliceblue.
       */
-      background-color: #003100;
-      color: #eeffee;
+      background-color: #00549E;
+      color: aliceblue;
 
       /* Sets the text to have a bolder font weight. */
       font-weight: bolder;
@@ -53,13 +53,14 @@
       or focused on.
     */
     nav a:hover, nav a:focus {
-      background-color: #eeffee;
-      color: #003100;
+      background-color: #f0f8ff;
+      color: #00549E;
     }
 
     /* Changes the colour of the links that have been visited already. */
     nav a:visited {
-      color: #9938f2;
+      color: violet;
+      text-shadow: 1px 0px 0px black;
     }
 
     /* Uses descendant selectors to style all list items that are in the nav-link class elements */
@@ -81,13 +82,24 @@
 
     /* Styles all main headings to use font size of 48 pixels and center aligns the text. */
     h1 {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: inline-block;
+      
+      padding: 10px 30px;
       font-size: 48px;
       text-align: center;
+      color: #121212;
+      background-color: aliceblue;
     }
 
-    /* Changes the background color of the section to be #5ac88b. */
+    /* Changes the background color of the section to be #00549E. */
     section {
-      background-color: #5ac88b;
+      background-color: #00549E;
+
+      padding: 10px 35px;
     }
 
     /* Changes the paragraphs in the section to have a bold font weight. */
