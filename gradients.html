@@ -8,7 +8,10 @@
   <style>
     /* Styles all elements to have a font size of 20 pixels by default. */
     * {
+      box-sizing: border-box;
       font-size: 20px;
+
+      scroll-behavior: smooth;
     }
 
     /*
@@ -19,7 +22,7 @@
       color: whitesmoke;
 
       /* Let us define an image using a URL to display an image as the background */
-      background-image: url(https://cdn.shopify.com/s/files/1/0533/2089/files/5-websites-to-download-free-subtle-textures-subtle.jpg?5724472906039650661);
+      background-color: whitesmoke;
 
       /* Lets us define which direction we want to have our image repeat in */
       /* background-repeat: repeat-y; */
@@ -30,7 +33,27 @@
       */
       /* background-size: 100% auto; */
 
-      margin: 5% 10%;
+      margin: 0;
+    }
+
+    nav {
+      width: 100%;
+
+      /* 
+        Defines a linear gradient background for the nav bar.
+        The linear gradient goes from right to left where the first
+        color #a8c0ff is on the right and the second color #3f2b96
+        is on the left.
+      */
+      background: linear-gradient(to left,#a8c0ff, #3f2b96);
+
+      /* 
+        Changes the background size of the gradient to be 100%
+        of the width of the nav and the auto height for the nav.
+      */
+      background-size: 100% auto;
+
+      padding: 1% 2%;
     }
 
     ul {
@@ -101,6 +124,10 @@
       font-size: 20px;
     }
 
+    main {
+      margin: 5% 10%;
+    }
+
     /* Styles all main headings to use font size of 48 pixels and center aligns the text. */
     h1 {
       position: relative;
@@ -110,8 +137,6 @@
       display: inline-block;
       
       padding: 10px 30px;
-
-      background-color: aliceblue;
       
       font-size: 48px;
       font-family: Arial, Helvetica, sans-serif;
@@ -132,9 +157,41 @@
     section p {
       font-weight: bold;
     }
+
+    #back-to-top {
+      position: fixed;
+      right: 5px;
+      bottom: 5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* 
+        By defining the width and height equally and using a
+        border-radius that is half of the width and height, we
+        create a perfectly circular back-to-top button.
+      */
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+
+      /* 
+        Defines a radial gradient for this circular back to top
+        button. where the first colour #3f2b96 is in the center 
+        of the circular area and goes to #a8c0ff on the outer
+        edges.
+      */
+      background: radial-gradient(#3f2b96, #a8c0ff);
+      color: whitesmoke;
+      text-shadow: 0px 1px 1px black, 0px 1.5px 1px black;
+      text-decoration: none;
+
+      text-align: center;
+    }
   </style>
 </head>
-<body>
+<body id="top">
   <nav>
     <ul>
       <a href="index.html" class="nav-link"><li>Inline CSS Page</li></a>
@@ -149,7 +206,7 @@
     </ul>
   </nav>
   <main>
-    <h1>Backgrounds and Text</h1>
+    <h1>Gradients</h1>
     <section>
       <p>School-appropriate filler</p>
       <p>School-appropriate filler</p>
@@ -183,5 +240,6 @@
       <p>School-appropriate filler</p>
     </section>
   </main>
+  <a href="#top" id="back-to-top">&#9651;</a>
 </body>
 </html>
