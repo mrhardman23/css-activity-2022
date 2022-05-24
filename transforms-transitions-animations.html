@@ -65,6 +65,9 @@
     }
 
     nav a {
+      /* 
+        Needed to add this to allow the scaling transition to work. 
+      */
       display: inline-block;
 
       /* Adds 4 pixels of space around the outside of each anchor in the nav */
@@ -105,6 +108,9 @@
         The transition lasts 0.5 seconds and eases in
         and eases out of the transition.
       */
+      -o-transition: transform 0.5s ease-in-out;
+      -moz-transition: transform 0.5 ease-in-out;
+      -webkit-transition: transform 0.5s ease-in-out;
       transition: transform 0.5s ease-in-out;
       
     }
@@ -166,11 +172,11 @@
         The other two parts just show terrible 3D rotations of
         the heading to demonstrate how 3D rotations work. 
       */
-      -ms-transform: translateX(-50%) rotateY(60deg) rotateX(180deg);
-      -o-transform: translateX(-50%) rotateY(60deg) rotateX(180deg);
-      -moz-transform: translateX(-50%) rotateY(60deg) rotateX(180deg);
-      -webkit-transform: translateX(-50%) rotateY(60deg) rotateX(180deg);
-      transform: translateX(-50%) rotateY(60deg) rotateX(180deg);
+      -ms-transform: translateX(-50%) rotateY(160deg) rotateX(180deg);
+      -o-transform: translateX(-50%) rotateY(160deg) rotateX(180deg);
+      -moz-transform: translateX(-50%) rotateY(160deg) rotateX(180deg);
+      -webkit-transform: translateX(-50%) rotateY(160deg) rotateX(180deg);
+      transform: translateX(-50%) rotateY(160deg) rotateX(180deg);
 
       display: inline-block;
       
