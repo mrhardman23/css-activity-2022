@@ -34,6 +34,208 @@
       /* background-size: 100% auto; */
 
       margin: 0;
+
+      /* 
+        Allows us to define a name for our animation so
+        that multiple animations can be created for a single
+        web page and the animation can be used for several
+        different elements if we want.
+      */
+      /* animation-name: fade-in; */
+
+      /* This defines how long the animation will take. */
+      /* animation-duration: 1s; */
+
+      /* 
+        This defines how the animation will look within
+        that 1s timeframe.
+      */
+      /* animation-timing-function: ease-in; */
+
+      /*
+        This causes a 0.5 second delay before the animation
+        starts.
+      */
+      /* animation-delay: 0.5s; */
+
+      /* 
+        This defines how many times the animation will run.
+        I don't actually want this to run 2 times, so I have
+        commented that property out.
+      */
+      /* animation-iteration-count: 2; */
+
+      /*
+        This defines the direction your animation will run.
+        normal is the default value, so I don't actually have
+        to define this property.
+      */
+      /* animation-direction: normal; */
+
+      /* 
+        This allows us to keep the styling that occurs at the
+        end of the animation.
+      */
+      /* animation-fill-mode: forwards; */
+
+      /* 
+        This is the shorthand for animation that includes
+        all of the above animation properties.
+      */
+      -o-animation: fade-in 1s linear 0.5s forwards;
+      -moz-animation: fade-in 1s linear 0.5s forwards;
+      -webkit-animation: fade-in 1s linear 0.5s forwards;
+      animation: fade-in 1s linear 0.5s forwards;
+    }
+
+    @-o-keyframes fade-in {
+      from {
+        position: relative;
+        top: 200px;
+
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fade-in {
+      from {
+        position: relative;
+        top: 200px;
+
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fade-in {
+      from {
+        position: relative;
+        top: 200px;
+
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    /* Animation for fading in the body content */
+    @keyframes fade-in {
+      from {
+        position: relative;
+        top: 200px;
+
+        opacity: 0;
+      }
+      to {
+        top: 0;
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes rectangle {
+      0% {
+        position: relative;
+        top: 0;
+        left: 50%;
+      }
+      25% {
+        top: 0;
+        left: 70%;
+      }
+      50% {
+        top: 200px;
+        left: 70%;
+      }
+      75% {
+        top: 200px;
+        left: 50%;
+      }
+      100% {
+        top: 0;
+        left: 50%;
+      }
+    }
+
+    @-moz-keyframes rectangle {
+      0% {
+        position: relative;
+        top: 0;
+        left: 50%;
+      }
+      25% {
+        top: 0;
+        left: 70%;
+      }
+      50% {
+        top: 200px;
+        left: 70%;
+      }
+      75% {
+        top: 200px;
+        left: 50%;
+      }
+      100% {
+        top: 0;
+        left: 50%;
+      }
+    }
+
+    @-webkit-keyframes rectangle {
+      0% {
+        position: relative;
+        top: 0;
+        left: 50%;
+      }
+      25% {
+        top: 0;
+        left: 70%;
+      }
+      50% {
+        top: 200px;
+        left: 70%;
+      }
+      75% {
+        top: 200px;
+        left: 50%;
+      }
+      100% {
+        top: 0;
+        left: 50%;
+      }
+    }
+
+    /* Animation moves in a square. */
+    @keyframes rectangle {
+      0% {
+        position: relative;
+        top: 0;
+        left: 50%;
+      }
+      25% {
+        top: 0;
+        left: 70%;
+      }
+      50% {
+        top: 200px;
+        left: 70%;
+      }
+      75% {
+        top: 200px;
+        left: 50%;
+      }
+      100% {
+        top: 0;
+        left: 50%;
+      }
     }
 
     nav {
@@ -109,7 +311,7 @@
         and eases out of the transition.
       */
       -o-transition: transform 0.5s ease-in-out;
-      -moz-transition: transform 0.5 ease-in-out;
+      -moz-transition: transform 0.5s ease-in-out;
       -webkit-transition: transform 0.5s ease-in-out;
       transition: transform 0.5s ease-in-out;
       
@@ -190,6 +392,7 @@
       color: #00549E; 
       text-shadow: 0px 1px 1px black, 0px 1.5px 1px black, 0px 2px 1px black;
       
+      animation: rectangle 3s ease 2s;
     }
 
     /* Changes the background color of the section to be #00549E. */
