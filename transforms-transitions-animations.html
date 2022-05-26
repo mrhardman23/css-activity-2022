@@ -34,95 +34,37 @@
       /* background-size: 100% auto; */
 
       margin: 0;
-
-      /* 
-        Allows us to define a name for our animation so
-        that multiple animations can be created for a single
-        web page and the animation can be used for several
-        different elements if we want.
-      */
-      /* animation-name: fade-in; */
-
-      /* This defines how long the animation will take. */
-      /* animation-duration: 1s; */
-
-      /* 
-        This defines how the animation will look within
-        that 1s timeframe.
-      */
-      /* animation-timing-function: ease-in; */
-
-      /*
-        This causes a 0.5 second delay before the animation
-        starts.
-      */
-      /* animation-delay: 0.5s; */
-
-      /* 
-        This defines how many times the animation will run.
-        I don't actually want this to run 2 times, so I have
-        commented that property out.
-      */
-      /* animation-iteration-count: 2; */
-
-      /*
-        This defines the direction your animation will run.
-        normal is the default value, so I don't actually have
-        to define this property.
-      */
-      /* animation-direction: normal; */
-
-      /* 
-        This allows us to keep the styling that occurs at the
-        end of the animation.
-      */
-      /* animation-fill-mode: forwards; */
-
-      /* 
-        This is the shorthand for animation that includes
-        all of the above animation properties.
-      */
-      -o-animation: fade-in 1s linear 0.5s forwards;
-      -moz-animation: fade-in 1s linear 0.5s forwards;
-      -webkit-animation: fade-in 1s linear 0.5s forwards;
-      animation: fade-in 1s linear 0.5s forwards;
     }
 
     @-o-keyframes fade-in {
       from {
-        position: relative;
-        top: 200px;
-
+        transform: translateY(300px);
         opacity: 0;
       }
       to {
-        top: 0;
+        transform: translateY(0);
         opacity: 1;
       }
     }
 
     @-moz-keyframes fade-in {
       from {
-        position: relative;
-        top: 200px;
-
+        transform: translateY(300px);
         opacity: 0;
       }
       to {
-        top: 0;
+        transform: translateY(0);
         opacity: 1;
       }
     }
 
     @-webkit-keyframes fade-in {
       from {
-        position: relative;
-        top: 200px;
-
+        transform: translateY(300px);
         opacity: 0;
       }
       to {
-        top: 0;
+        transform: translateY(0);
         opacity: 1;
       }
     }
@@ -130,13 +72,11 @@
     /* Animation for fading in the body content */
     @keyframes fade-in {
       from {
-        position: relative;
-        top: 200px;
-
+        transform: translateY(300px);
         opacity: 0;
       }
       to {
-        top: 0;
+        transform: translateY(0);
         opacity: 1;
       }
     }
@@ -259,6 +199,60 @@
       background-size: 100% auto;
 
       padding: 1% 2%;
+
+      opacity: 0;
+
+      /* 
+        Allows us to define a name for our animation so
+        that multiple animations can be created for a single
+        web page and the animation can be used for several
+        different elements if we want.
+      */
+      /* animation-name: fade-in; */
+
+      /* This defines how long the animation will take. */
+      /* animation-duration: 1s; */
+
+      /* 
+        This defines how the animation will look within
+        that 1s timeframe.
+      */
+      /* animation-timing-function: ease-in; */
+
+      /*
+        This causes a 0.5 second delay before the animation
+        starts.
+      */
+      /* animation-delay: 0.5s; */
+
+      /* 
+        This defines how many times the animation will run.
+        I don't actually want this to run 2 times, so I have
+        commented that property out.
+      */
+      /* animation-iteration-count: 2; */
+
+      /*
+        This defines the direction your animation will run.
+        normal is the default value, so I don't actually have
+        to define this property.
+      */
+      /* animation-direction: normal; */
+
+      /* 
+        This allows us to keep the styling that occurs at the
+        end of the animation.
+      */
+      /* animation-fill-mode: forwards; */
+
+      /* 
+        This is the shorthand for animation that includes
+        all of the above animation properties.
+      */
+      -o-animation: fade-in 1s ease-in 0.3s forwards;
+      -moz-animation: fade-in 1s ease-in 0.3s forwards;
+      -webkit-animation: fade-in 1s ease-in 0.3s forwards;
+      animation: fade-in 1s ease-in 0.3s forwards;
     }
 
     ul {
@@ -359,6 +353,60 @@
 
     main {
       margin: 5% 10%;
+
+      opacity: 0;
+
+      /* 
+        Allows us to define a name for our animation so
+        that multiple animations can be created for a single
+        web page and the animation can be used for several
+        different elements if we want.
+      */
+      /* animation-name: fade-in; */
+
+      /* This defines how long the animation will take. */
+      /* animation-duration: 1s; */
+
+      /* 
+        This defines how the animation will look within
+        that 1s timeframe.
+      */
+      /* animation-timing-function: ease-in; */
+
+      /*
+        This causes a 0.5 second delay before the animation
+        starts.
+      */
+      /* animation-delay: 0.5s; */
+
+      /* 
+        This defines how many times the animation will run.
+        I don't actually want this to run 2 times, so I have
+        commented that property out.
+      */
+      /* animation-iteration-count: 2; */
+
+      /*
+        This defines the direction your animation will run.
+        normal is the default value, so I don't actually have
+        to define this property.
+      */
+      /* animation-direction: normal; */
+
+      /* 
+        This allows us to keep the styling that occurs at the
+        end of the animation.
+      */
+      /* animation-fill-mode: forwards; */
+
+      /* 
+        This is the shorthand for animation that includes
+        all of the above animation properties.
+      */
+      -o-animation: fade-in 1s ease-in 0.3s forwards;
+      -moz-animation: fade-in 1s ease-in 0.3s forwards;
+      -webkit-animation: fade-in 1s ease-in 0.3s forwards;
+      animation: fade-in 1s ease-in 0.3s forwards;
     }
 
     /* Styles all main headings to use font size of 48 pixels and center aligns the text. */
