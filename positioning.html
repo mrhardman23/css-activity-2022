@@ -49,6 +49,13 @@
       background-size: 100% auto;
 
       padding: 1% 2%;
+
+      position: sticky;
+
+      top: 0;
+      left: 0;
+
+      z-index: 3;
     }
 
     ul {
@@ -60,7 +67,7 @@
       /* 
         Needed to add this to allow the scaling transition to work. 
       */
-      display: inline-block;
+      display: none;
 
       /* Adds 4 pixels of space around the outside of each anchor in the nav */
       margin: 4px;
@@ -223,6 +230,50 @@
 
       text-align: center;
     }
+
+    #float img {
+      float: left;
+    }
+
+    #relative {
+      position: relative;
+      top: 200px;
+      right: 50px;
+    }
+
+    #positioned {
+      position: relative;
+
+      z-index: 1;
+    }
+
+    #absolute {
+      /* Pulls the element out of the normal flow of the website */
+      position: absolute;
+
+      bottom: 0;
+      right: 0;
+    }
+
+    #sticky {
+      /*
+        Sticky acts like a relatively positioned element
+        until you reach the offset defined by top, left, bottom,
+        or right. Once you reach the offset, it becomes a fixed
+        element. 
+      */
+      position: sticky;
+
+      top: 250px;
+
+      z-index: 3;
+
+      background-color: #121212;
+
+      padding: 20px;
+
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -251,6 +302,15 @@
         height="200px"
       />
       <p>
+        This is an image to represent just how school-appropriate this web page is.
+        We made this web page to demonstrate the CSS properties of float, clear, position, 
+        display, and visibility.
+        This is an image to represent just how school-appropriate this web page is.
+        We made this web page to demonstrate the CSS properties of float, clear, position, 
+        display, and visibility.
+        This is an image to represent just how school-appropriate this web page is.
+        We made this web page to demonstrate the CSS properties of float, clear, position, 
+        display, and visibility.
         This is an image to represent just how school-appropriate this web page is.
         We made this web page to demonstrate the CSS properties of float, clear, position, 
         display, and visibility.

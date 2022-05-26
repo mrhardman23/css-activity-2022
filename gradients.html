@@ -147,6 +147,30 @@
       color: #00549E; 
       text-shadow: 0px 1px 1px black, 0px 1.5px 1px black, 0px 2px 1px black;
       
+      /* 
+        Visibility allows you to hide the element, but the space
+        used up by the element stays there.
+      */
+      visibility: hidden;
+
+      /*
+        We are going to create an animation that swivels the heading
+        in when the page loads. 
+      */
+      -o-animation: swivel 1s ease-in-out 0.5s forwards;
+      -moz-animation: swivel 1s ease-in-out 0.5s forwards;
+      -webkit-animation: swivel 1s ease-in-out 0.5s forwards;
+      animation: swivel 1s ease-in-out 0.5s forwards;
+    }
+
+    @keyframes swivel {
+      from {
+        transform: translateX(-50%) rotateY(90deg);
+      }
+      to {
+        transform: translateX(-50%) rotateY(0deg);
+        visibility: visible;
+      }
     }
 
     /* Changes the background color of the section to be #00549E. */
